@@ -18,7 +18,6 @@
 
     </v-tabs>
 
-    <v-input>message</v-input>
     <v-menu offset-y>
       <template v-slot:activator="{ on, attrs }">
         <v-avatar
