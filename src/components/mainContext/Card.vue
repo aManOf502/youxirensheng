@@ -7,8 +7,9 @@
         color="yellow"
     >
       <div class="card">
-        {{item.id}}
-        {{item.context}}
+        <h1 class="pointer">{{item.id}}</h1>
+        {{item.auther}}:{{item.context}}
+
       </div>
     </v-card>
 
@@ -24,5 +25,8 @@ name: "Card",
 <style scoped>
  .card{
    margin: 10px;
+ }
+ .pointer{
+   cursor: pointer;
  }
 </style>

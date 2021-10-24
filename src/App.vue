@@ -30,15 +30,14 @@
 <!--      ></v-avatar>-->
 <!--    </v-app-bar>-->
     <Header></Header>
-    <Context></Context>
+    <router-view></router-view>
   </v-app>
 </template>
 
 <script>
 import Header from "@/components/Header";
-import Context from "@/components/Context";
 export default {
-  components: {Context, Header},
+  components: { Header},
   data: () => ({
     links: [
       '首页',

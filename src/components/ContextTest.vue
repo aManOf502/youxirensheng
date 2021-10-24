@@ -24,8 +24,8 @@
               rounded="lg"
           >
               <v-tabs>
-                <v-tab>推荐</v-tab>
-                <v-tab>热榜</v-tab>
+                <v-tab>我是测试号</v-tab>
+                <v-tab>你好</v-tab>
               </v-tabs>
 
 
