@@ -1,12 +1,10 @@
 <template>
     <v-card
-        elevation="10"
         outlined
-        tile
         height="173px"
-        color="green"
+        tile
     >
-      <div class="card">
+      <div>
         {{item.id}}
         {{item.context}}
       </div>
@@ -23,7 +21,4 @@ name: "Card",
 </script>
 
 <style scoped>
- .card{
-   margin: 10px;
- }
 </style>

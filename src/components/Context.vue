@@ -16,7 +16,7 @@
 
         <v-col
             cols="12"
-            sm="8"
+            sm="6"
 
         >
           <v-sheet
@@ -36,7 +36,7 @@
 
         <v-col
             cols="12"
-            sm="2"
+            sm="4"
         >
           <v-sheet
               rounded="lg"
