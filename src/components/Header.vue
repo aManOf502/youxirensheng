@@ -3,6 +3,7 @@
       app
       color="white"
       flat
+      outlined
   >
     <v-tabs
         class="ml-n9"
