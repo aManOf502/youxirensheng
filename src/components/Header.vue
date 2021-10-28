@@ -34,11 +34,9 @@
         </v-avatar>
       </template>
       <v-list>
-        <v-list-item
-            v-for="(item, index) in items"
-            :key="index"
-        >
-          <v-list-item-title>{{ item.title }}</v-list-item-title>
+        <v-list-item>
+          <v-list-item-title @click="goMyHome(1)">个人中心</v-list-item-title>
+          <v-list-item-title>退出</v-list-item-title>
         </v-list-item>
       </v-list>
     </v-menu>
@@ -55,11 +53,7 @@ export default {
       {name: '首页', address: 'home'},
       {name: '论坛', address: 'pss'},
 
-    ],
-    items: [
-      {title: '个人中心'},
-      {title: '退出'},
-    ],
+    ]
   }),
   methods: {
     howToGo(address) {
@@ -69,7 +63,14 @@ export default {
           path: `/${address}`
         })
       }
-
+    },
+    goMyHome(id){
+      this.$router.push({
+        path:'/people',
+        query:{
+          id:id
+        }
+      })
     }
   }
 }
